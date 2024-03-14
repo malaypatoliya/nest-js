@@ -20,7 +20,7 @@ export class RoleController {
         };
     }
 
-    @Get()
+    @Get('/')
     getRole() {
         return {
             message: "Role fetched successfully",

@@ -54,7 +54,7 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], RoleController.prototype, "getRoles", null);
 __decorate([
-    (0, common_1.Get)(),
+    (0, common_1.Get)('/'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
