@@ -14,7 +14,9 @@ async function bootstrap() {
         .build();
     const document = swagger_1.SwaggerModule.createDocument(app, config);
     swagger_1.SwaggerModule.setup('api/docs', app, document);
-    await app.listen(PORT);
+    await app.listen(PORT).then(() => {
+        console.log(`=> Server running on port: ${PORT}`);
+    });
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
